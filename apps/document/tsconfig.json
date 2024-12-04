@@ -1,0 +1,12 @@
+{
+    "extends": "@uvarovag/tsconfig-react",
+    "include": ["src", "global.d.ts"],
+    "exclude": ["node_modules", "dist"],
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "baseUrl": "./",
+        "paths": {
+            "*": ["./src/*"]
+        }
+    }
+}
