@@ -1,4 +1,4 @@
-# React App
+# React Module Federation Static
 
 ## Features
 
@@ -11,7 +11,7 @@
 npm run install:all
 ```
 
-## Run
+## Start
 
 ```bash
 npm run start:all
