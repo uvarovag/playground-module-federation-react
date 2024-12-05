@@ -1,0 +1,18 @@
+{
+    "name": "react-module-federation-static",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start:all": "concurrently \"(npm start --prefix ./apps/document)\" \"(npm start --prefix ./apps/host)\" \"(npm start --prefix ./apps/user)\"",
+        "install:all": "concurrently \"(npm i --prefix ./apps/document)\" \"(npm i --prefix ./apps/host)\" \"(npm i --prefix ./apps/user)\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@uvarovag/prettier-config-ts-react": "^1.0.0",
+        "concurrently": "^9.1.0",
+        "prettier": "^3.4.2"
+    }
+}
