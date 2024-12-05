@@ -2,8 +2,8 @@
 
 ## Features
 
-- Module federation static module import
-- React router dom
+- Host app
+- Remote app
 
 ## Installation
 
