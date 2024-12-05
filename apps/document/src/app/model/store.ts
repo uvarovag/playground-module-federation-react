@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import { pokemonApi } from 'entities/pokemon'
+import { berryApi } from 'entities/berry'
 
 export const store = configureStore({
     devTools: IS_DEV,
     reducer: {
-        [pokemonApi.reducerPath]: pokemonApi.reducer,
+        [berryApi.reducerPath]: berryApi.reducer,
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(pokemonApi.middleware),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(berryApi.middleware),
 })

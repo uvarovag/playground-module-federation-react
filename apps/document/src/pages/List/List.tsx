@@ -1,9 +1,9 @@
 import { Link } from 'react-router'
 
-import { usePokemonsQuery } from 'entities/pokemon'
+import { useBerriesQuery } from 'entities/berry'
 
 export const List = () => {
-    const { data } = usePokemonsQuery('')
+    const { data } = useBerriesQuery('')
     return (
         <>
             <h2>Document List Page</h2>
