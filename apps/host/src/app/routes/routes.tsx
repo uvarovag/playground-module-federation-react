@@ -1,11 +1,9 @@
+// TODO lint rules
 import documentRoutes from 'document/routes'
 import { RouteObject } from 'react-router'
 import userRoutes from 'user/routes'
 
 import { Layout } from 'app/layout'
-
-console.log(documentRoutes)
-console.log(userRoutes)
 
 export const routes: RouteObject[] = [
     {
