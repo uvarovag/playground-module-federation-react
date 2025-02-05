@@ -1,19 +1,40 @@
 {
-    "name": "react-module-federation-static",
+"name": "react-module-federation-static",
     "version": "1.0.0",
-    "main": "index.js",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
-        "start:all": "concurrently \"(npm start --prefix ./apps/document)\" \"(npm start --prefix ./apps/host)\" \"(npm start --prefix ./apps/user)\"",
-        "install:all": "concurrently \"(npm i --prefix ./apps/document)\" \"(npm i --prefix ./apps/host)\" \"(npm i --prefix ./apps/user)\"",
-        "format:all": "concurrently \"(npm run format --prefix ./apps/document)\" \"(npm run format --prefix ./apps/host)\" \"(npm run format --prefix ./apps/user)\""
+        "start": "concurrently \"(npm start --workspace=document-app)\" \"(npm start --workspace=host-app)\" \"(npm start --workspace=user-app)\""
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "@uvarovag",
+    "license": "MIT",
     "description": "",
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.4.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-redux": "^9.1.2",
+        "react-router": "^7.0.1"
+    },
     "devDependencies": {
-        "@uvarovag/prettier-config-ts-react": "^1.0.0",
-        "concurrently": "^9.1.0",
-        "prettier": "^3.4.2"
+        "@types/react-dom": "^18.3.1",
+        "@types/react-router": "^5.1.20",
+        "@uvarovag/eslint-config-feature-sliced-flat": "^1.0.9",
+        "@uvarovag/eslint-config-ts-react": "^2.0.16",
+        "@uvarovag/prettier-config": "^1.0.6",
+        "@uvarovag/to-camel-case": "^1.0.15",
+        "@uvarovag/tsconfig-react": "^1.0.5",
+        "@uvarovag/webpack-config-ts-react": "^1.2.2",
+        "concurrently": "^9.1.2",
+        "eslint": "^9.18.0",
+        "prettier": "^3.4.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-merge": "^6.0.1"
     }
 }

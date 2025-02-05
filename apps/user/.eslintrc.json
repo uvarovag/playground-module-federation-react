@@ -1,3 +1,0 @@
-{
-    "extends": ["@feature-sliced", "@uvarovag/eslint-config-ts-react"]
-}

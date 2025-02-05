@@ -1,8 +1,8 @@
-import { RouteObject } from 'react-router'
-
 import { Providers } from 'app/providers'
 import { List } from 'pages/List'
 import { Object } from 'pages/Object'
+
+import type { RouteObject } from 'react-router'
 
 export const routes: RouteObject[] = [
     {

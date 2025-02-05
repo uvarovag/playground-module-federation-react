@@ -1,3 +1,5 @@
+// import type { RouteObject } from 'react-router'
+
 declare const IS_DEV: boolean
 
 declare module 'user/routes' {
