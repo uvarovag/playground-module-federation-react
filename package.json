@@ -6,7 +6,9 @@
         "packages/*"
     ],
     "scripts": {
-        "start": "concurrently \"(npm start --workspace=remote-document)\" \"(npm start --workspace=host)\" \"(npm start --workspace=remote-user)\""
+        "start": "concurrently \"(npm start --workspace=remote-document)\" \"(npm start --workspace=host)\" \"(npm start --workspace=remote-user)\"",
+        "build": "concurrently \"(npm run build --workspace=remote-document)\" \"(npm run build --workspace=host)\" \"(npm run build --workspace=remote-user)\"",
+        "lint:fix": "concurrently \"(npm run lint:fix --workspace=remote-document)\" \"(npm run lint:fix --workspace=host)\" \"(npm run lint:fix --workspace=remote-user)\""
     },
     "keywords": [],
     "author": "@uvarovag",
