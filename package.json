@@ -1,5 +1,5 @@
 {
-"name": "react-module-federation-static",
+"name": "playground-module-federation-react",
     "version": "1.0.0",
     "private": true,
     "workspaces": [

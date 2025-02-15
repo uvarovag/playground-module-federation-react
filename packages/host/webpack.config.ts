@@ -18,7 +18,6 @@ export default (env: TEnv) =>
                 filename: 'remoteEntry.js',
                 remotes: {
                     document: `remoteDocument@http://localhost:3001/remoteEntry.js`,
-                    user: `remoteUser@http://localhost:3002/remoteEntry.js`,
                 },
                 shared: {
                     ...dependencies,

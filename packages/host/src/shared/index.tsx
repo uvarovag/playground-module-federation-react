@@ -1,0 +1,1 @@
+export { RemoteComponent } from './RemoteComponent'
