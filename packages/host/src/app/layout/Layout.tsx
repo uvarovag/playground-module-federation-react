@@ -4,7 +4,7 @@ import { Navbar } from 'widgets/Navbar'
 
 export const Layout = () => (
     <>
-        <h1>Host App</h1>
+        <h1>host app</h1>
         <Navbar />
         <hr />
         <Outlet />

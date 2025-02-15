@@ -17,8 +17,8 @@ export default (env: TEnv) =>
                 name: toCamelCase(name),
                 filename: 'remoteEntry.js',
                 remotes: {
-                    document: `documentApp@http://localhost:3001/remoteEntry.js`,
-                    user: `userApp@http://localhost:3002/remoteEntry.js`,
+                    document: `remoteDocument@http://localhost:3001/remoteEntry.js`,
+                    user: `remoteUser@http://localhost:3002/remoteEntry.js`,
                 },
                 shared: {
                     ...dependencies,

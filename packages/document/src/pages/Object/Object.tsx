@@ -7,7 +7,7 @@ export const Object = () => {
     const { data } = useBerryQuery(objectId ?? '', { skip: !objectId })
     return (
         <>
-            <h2>Document Object Page</h2>
+            <h2>document object page</h2>
             <p>name: {data?.name}</p>
             <p>size: {data?.size}</p>
             <p>smoothness: {data?.smoothness}</p>

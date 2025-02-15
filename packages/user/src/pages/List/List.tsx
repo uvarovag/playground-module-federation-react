@@ -6,7 +6,7 @@ export const List = () => {
     const { data } = usePokemonsQuery('')
     return (
         <>
-            <h2>User List Page</h2>
+            <h2>user list page</h2>
             <ul>
                 {data?.results.map(({ name }) => (
                     <li key={name}>

@@ -1,13 +1,11 @@
-// import type { RouteObject } from 'react-router'
-
 declare const IS_DEV: boolean
 
-declare module 'user/routes' {
-    const userRoutes: RouteObject[]
-    export default userRoutes
+declare module 'user/Routes' {
+    const UserRoutes: ReactElement
+    export default UserRoutes
 }
 
-declare module 'document/routes' {
-    const documentRoutes: RouteObject[]
-    export default documentRoutes
+declare module 'document/Routes' {
+    const DocumentRoutes: ReactElement
+    export default DocumentRoutes
 }

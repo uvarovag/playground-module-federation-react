@@ -6,7 +6,7 @@ export const Navbar = () => (
             <Link to="/user">to user app</Link>
         </li>
         <li>
-            <Link to="./">main</Link>
+            <Link to="/document">main</Link>
         </li>
     </ul>
 )

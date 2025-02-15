@@ -1,12 +1,12 @@
 {
-    "name": "host-app",
+    "name": "host",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.tsx",
     "scripts": {
         "start": "webpack serve --env PORT=9999 NODE_ENV=development PUBLIC_PATH=/",
+        "build": "webpack --env NODE_ENV=production",
         "build:dev": "webpack --env NODE_ENV=development",
-        "build:prod": "webpack --env NODE_ENV=production",
         "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix && prettier --write '**/*.{ts,tsx,js,json,css,html,md}'"
     },
     "keywords": [

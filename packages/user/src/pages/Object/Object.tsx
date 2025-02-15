@@ -7,7 +7,7 @@ export const Object = () => {
     const { data } = usePokemonQuery(objectId ?? '', { skip: !objectId })
     return (
         <>
-            <h2>User Object Page</h2>
+            <h2>user object page</h2>
             <p>name: {data?.name}</p>
             <p>order: {data?.order}</p>
             <p>weight: {data?.weight}</p>

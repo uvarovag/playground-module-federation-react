@@ -1,6 +1,5 @@
-// TODO lint rules
-import documentRoutes from 'document/routes'
-import userRoutes from 'user/routes'
+import DocumentRoutes from 'document/Routes'
+import UserRoutes from 'user/Routes'
 
 import { Layout } from 'app/layout'
 
@@ -12,12 +11,12 @@ export const routes: RouteObject[] = [
         element: <Layout />,
         children: [
             {
-                path: 'document',
-                children: documentRoutes,
+                path: 'document/*',
+                element: <DocumentRoutes />,
             },
             {
-                path: 'user',
-                children: userRoutes,
+                path: 'user/*',
+                element: <UserRoutes />,
             },
         ],
     },

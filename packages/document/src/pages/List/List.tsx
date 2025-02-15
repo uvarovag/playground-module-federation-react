@@ -6,7 +6,7 @@ export const List = () => {
     const { data } = useBerriesQuery('')
     return (
         <>
-            <h2>Document List Page</h2>
+            <h2>document list page</h2>
             <ul>
                 {data?.results.map(({ name }) => (
                     <li key={name}>
