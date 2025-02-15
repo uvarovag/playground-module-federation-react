@@ -1,4 +1,4 @@
-# React Module Federation Static Module Import
+# Module Federation React
 
 ## Features
 
